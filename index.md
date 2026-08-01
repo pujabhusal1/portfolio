@@ -8,7 +8,6 @@ title: Puja Bhusal | Portfolio
   <div class="intro">
     <h1>Puja Bhusal</h1>
     <p>Hello, my name is Puja Bhusal. I am from Nepal. I have completed my Bachelor's degree (BCA). I am currently learning Python programming and improving my technical skills. I am interested in technology, UI/UX design, and continuous learning. My goal is to build a successful career in the IT field and keep developing my knowledge through practice and real-world projects. </p>
-    <p><strong>Photo description:</strong> A soft, natural-light portrait placeholder with a calm and welcoming presence.</p>
   </div>
 </section>
 
