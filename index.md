@@ -15,16 +15,18 @@ title: Puja Bhusal | Portfolio
   <h2>Projects</h2>
   <ul>
     {% for project in site.data.projects %}
-    <li>
-      <h3>{{ project.name }}</h3>
-      <p>{{ project.description }}</p>
-       {% endfor %}
-         {% if project.url %}
-        <p>
-          <a href="{{ project.url }}" target="_blank" rel="noopener">
-            Visit Project
-          </a>
-        </p>
-      {% endif %}
+      <li>
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+
+        {% if project.url %}
+          <p>
+            <a href="{{ project.url }}" target="_blank" rel="noopener">
+              Visit Project
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
   </ul>
 </section>
