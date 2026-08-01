@@ -26,6 +26,5 @@ title: Puja Bhusal | Portfolio
           </a>
         </p>
       {% endif %}
-
   </ul>
 </section>
