@@ -28,5 +28,28 @@ title: Puja Bhusal | Portfolio
         {% endif %}
       </li>
     {% endfor %}
+     
   </ul>
 </section>
+
+<section class="education">
+  <h2>Projects</h2>
+  <ul>
+    {% for education_info in site.data.education %}
+      <li>
+        <h3>{{ education_info.name }}</h3>
+        <p>{{ education_info.description }}</p>
+
+        {% if education_info.url %}
+          <p>
+            <a href="{{ education_info.url }}" target="_blank" rel="noopener">
+              Visit Education
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+     
+  </ul>
+</section>
+
