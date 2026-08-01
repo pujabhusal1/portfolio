@@ -1,8 +1,9 @@
-- name: Project
-  description: A polished single-page portfolio designed to highlight projects, experience, and a personal brand.
 - name: Education
-  description: A reusable set of styled interface components for fast prototyping and clean product experiences.
+  description: A polished single-page portfolio designed to highlight projects, experience, and a personal brand.
 - name: Training
+  description: A reusable set of styled interface components for fast prototyping and clean product experiences.
+- name: Publication
   description: A readable dashboard that turns complex numbers into clear, compelling insight for decision makers.
-  name: Publication
-  description:
+- name: Publication
+  description: A simple, responsive, and accessible blog theme for Jekyll that is easy to customize and extend.
+
