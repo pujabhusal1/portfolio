@@ -7,7 +7,7 @@ title: Puja Bhusal | Portfolio
   <img src="{{ '/assets/images/photo_of_puja.jpg' | relative_url }}" alt="Portrait of Puja Bhusal" />
   <div class="intro">
     <h1>Puja Bhusal</h1>
-    <p>Creative developer building meaningful digital experiences with thoughtful design and clean code.</p>
+    <p>Hello, my name is Puja Bhusal. I am from Nepal. I have completed my Bachelor's degree (BCA). I am currently learning Python programming and improving my technical skills. I am interested in technology, UI/UX design, and continuous learning. My goal is to build a successful career in the IT field and keep developing my knowledge through practice and real-world projects. </p>
     <p><strong>Photo description:</strong> A soft, natural-light portrait placeholder with a calm and welcoming presence.</p>
   </div>
 </section>
