@@ -32,14 +32,16 @@ h1, h2, h3 {
   color: #0f172a;
 }
 
-.projects ul {
+.projects ul, 
+.education ul{
   list-style: none;
   padding: 0;
   display: grid;
   gap: 1rem;
 }
 
-.projects li {
+.projects li,
+.education li {
   background: #ffffff;
   padding: 1rem 1.25rem;
   border-radius: 12px;
