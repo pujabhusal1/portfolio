@@ -33,7 +33,7 @@ title: Puja Bhusal | Portfolio
 </section>
 
 <section class="education">
-  <h2>Projects</h2>
+  <h2>Education</h2>
   <ul>
     {% for education_info in site.data.education %}
       <li>

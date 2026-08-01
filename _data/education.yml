@@ -1,15 +1,7 @@
-- name: Education
-  description: A polished single-page portfolio designed to highlight projects, experience, and a personal brand.
-  url: https://yourprojectwebsite.com
+- name: Bachelor's in Computer Applications (BCA)
+  description: Completed a Bachelor's degree in Computer Applications with a focus on software fundamentals, web development, and problem-solving.
+  url: https://example.com
 
-- name: Publication
-  description: A readable dashboard that turns complex numbers into clear, compelling insight for decision makers.
-  url: https://yourpublicationwebsite.com
-
-- name: Portfolio Website
-  description: 
-  url: https://yourportfolio.com
-
-- name: Additional website
-  description: 
-  url: https://www.youtube.com/@impujabhusal
+- name: Continuing Learning
+  description: Actively building skills in Python programming, web development, and UI/UX design through practice and real-world projects.
+  url: https://example.com
