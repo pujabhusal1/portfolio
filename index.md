@@ -18,8 +18,14 @@ title: Puja Bhusal | Portfolio
     <li>
       <h3>{{ project.name }}</h3>
       <p>{{ project.description }}</p>
-      <p>{{website link}}</p>
-    </li>
-    {% endfor %}
+       {% endfor %}
+         {% if project.url %}
+        <p>
+          <a href="{{ project.url }}" target="_blank" rel="noopener">
+            Visit Project
+          </a>
+        </p>
+      {% endif %}
+
   </ul>
 </section>
