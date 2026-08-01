@@ -1,10 +1,9 @@
 - name: Hotel reservation system
-  description: it is an e-commerce website that allows users to book hotels online. This website is designed to provide a seamless and convenient experience for users looking to find and reserve accomodations. This website is created with PHP, HTML,CSS and Javascript
+  description: This is an e-commerce website that allows users to book hotels online. This website is designed to provide a seamless and convenient experience for users looking to find and reserve accomodations. This website is created with PHP, HTML,CSS and Javascript
   url: https://github.com/pujabhusal1/hotel-reservation-system
 
-- name: Publication
-  description: A readable dashboard that turns complex numbers into clear, compelling insight for decision makers.
-  url: https://yourpublicationwebsite.com
+- name: Flower Shop (E- commerce website)
+  description: This is an e-commerce website that allows users to buy flower online. This is a simple website where user can simply order flower online. This website is creted with PHP, HTML, CSS and javascript.
 
 - name: Portfolio Website
   description: 
