@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 .projects ul, 
-.education ul
+.education ul,
 .skills ul{
   list-style: none;
   padding: 0;
@@ -42,7 +42,7 @@ h1, h2, h3 {
 }
 
 .projects li,
-.education li
+.education li,
 .skills li {
   background: #ffffff;
   padding: 1rem 1.25rem;
