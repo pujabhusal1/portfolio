@@ -53,4 +53,26 @@ title: Puja Bhusal | Portfolio
      
   </ul>
 </section>
+<section class="Skills">
+  <h2>Skills</h2>
+  <ul>
+    {% for skills_info in site.data.skills %}
+      <li>
+        <h3>{{ skills_info.name }}</h3>
+        <p>{{ skills_info.description }}</p>
+       
+
+        {% if skills_info.url %}
+          <p>
+            <a href="{{ skills_info.url }}" target="_blank" rel="noopener">
+              Visit Skills
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+     
+  </ul>
+</section>
+
 
