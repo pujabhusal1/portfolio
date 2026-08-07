@@ -1,7 +1,14 @@
-- name: Bachelor's in Computer Applications (BCA)             Dec2025
-  description: Completed a Bachelor's degree in Computer Applications with a focus on software fundamentals, web development, and problem-solving.
+- name: Bachelor of Computer Applications (BCA)
+  date: Dec 2025
+  description: >
+    Completed a Bachelor of Computer Applications with a strong foundation
+    in programming, web development, database management, and software
+    development principles.
   url:
 
-- name: Continuing Learning
-  description: Actively building skills in Python programming, web development, and UI/UX design through practice and real-world projects.
-  url: https://example.com
+- name: Continuous Learning
+  description: >
+    Continuously enhancing my skills in Python programming, web development,
+    UI/UX design, and modern software development through hands-on projects
+    and self-directed learning.
+  url:
