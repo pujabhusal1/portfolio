@@ -39,6 +39,7 @@ title: Puja Bhusal | Portfolio
       <li>
         <h3>{{ education_info.name }}</h3>
         <p>{{ education_info.description }}</p>
+        <p>{{education_info.date}}</p>
 
         {% if education_info.url %}
           <p>
