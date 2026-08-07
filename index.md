@@ -74,5 +74,26 @@ title: Puja Bhusal | Portfolio
      
   </ul>
 </section>
+<section class="traineeship">
+  <h2>traineeship</h2>
+  <ul>
+    {% for traineeship_info in site.data.skills %}
+      <li>
+        <h3>{{ traineeship_info.name }}</h3>
+        <p>{{ traineeship_info.description }}</p>
+       
+
+        {% if traineeship_info.url %}
+          <p>
+            <a href="{{ traineeship_info.url }}" target="_blank" rel="noopener">
+              Visit traineeship
+            </a>
+          </p>
+        {% endif %}
+      </li>
+    {% endfor %}
+     
+  </ul>
+</section>
 
 
