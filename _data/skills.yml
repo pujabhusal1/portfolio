@@ -1,13 +1,18 @@
 - name:  Programming Languages:
   description: Python, SQL, C, PHP, HTML
+  url:
 - name: Quality Assurance / Testing: 
   description: Apache JMeter, Postman, Selenium
+  url:
 - name: Databases:
   description: MySQL
+  url:
 - name: Tools / Frameworks:
   description: Power BI, Visual Studio Code, WordPress, Microsoft Office, Atlassian Jira
+  url:
 - name: Version Control System:
   description: Git
+  url:
 - name: Other Skills:
   description: Digital Marketing, Technical Writing, Leadership Skills, Social Media Analytics
   url:
