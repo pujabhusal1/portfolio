@@ -77,7 +77,7 @@ title: Puja Bhusal | Portfolio
 <section class="traineeship">
   <h2>Traineeship</h2>
   <ul>
-    {% for traineeship_info in site.data.skills %}
+    {% for traineeship_info in site.data.traineeship %}
       <li>
         <h3>{{ traineeship_info.name }}</h3>
         <p>{{ traineeship_info.description }}</p>
