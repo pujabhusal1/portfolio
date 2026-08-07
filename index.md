@@ -81,8 +81,6 @@ title: Puja Bhusal | Portfolio
       <li>
         <h3>{{ traineeship_info.name }}</h3>
         <p>{{ traineeship_info.description }}</p>
-       
-
         {% if traineeship_info.url %}
           <p>
             <a href="{{ traineeship_info.url }}" target="_blank" rel="noopener">
