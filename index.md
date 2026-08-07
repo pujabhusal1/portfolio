@@ -53,7 +53,7 @@ title: Puja Bhusal | Portfolio
      
   </ul>
 </section>
-<section class="Skills">
+<section class="skills">
   <h2>Skills</h2>
   <ul>
     {% for skills_info in site.data.skills %}
