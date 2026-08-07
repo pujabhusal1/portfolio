@@ -34,7 +34,8 @@ h1, h2, h3 {
 
 .projects ul, 
 .education ul,
-.skills ul{
+.skills ul,
+.traineeship ul{
   list-style: none;
   padding: 0;
   display: grid;
@@ -43,7 +44,8 @@ h1, h2, h3 {
 
 .projects li,
 .education li,
-.skills li {
+.skills li,
+.traineeship.li {
   background: #ffffff;
   padding: 1rem 1.25rem;
   border-radius: 12px;
