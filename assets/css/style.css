@@ -41,7 +41,8 @@ h1, h2, h3 {
 }
 
 .projects li,
-.education li {
+.education li
+.skills li {
   background: #ffffff;
   padding: 1rem 1.25rem;
   border-radius: 12px;
