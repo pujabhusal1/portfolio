@@ -312,7 +312,7 @@ title: Puja Bhusal | Portfolio
       </p>
 
       <form
-        action="https://formspree.io/f/xoevbkdd
+        action="https://formspree.io/f/xoevbkdd"
         method="POST"
         class="contact-form"
       >
