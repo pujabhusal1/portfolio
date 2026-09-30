@@ -3,20 +3,25 @@
 ================================ */
 
 :root {
-  --primary: #6366f1;
-  --primary-dark: #4f46e5;
+  --primary: #5b5ce6;
+  --primary-dark: #4542d3;
   --secondary: #8b5cf6;
+  --accent: #22c55e;
   --dark: #0f172a;
+  --dark-soft: #1e293b;
   --text: #475569;
   --light-text: #64748b;
-  --background: #f8fafc;
+  --background: #f4f7fb;
+  --background-strong: #eef2ff;
   --white: #ffffff;
-  --border: #e2e8f0;
-  --gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+  --border: rgba(148, 163, 184, 0.22);
+  --gradient: linear-gradient(135deg, #5b5ce6, #8b5cf6, #ec4899);
+  --soft-gradient: linear-gradient(135deg, rgba(91, 92, 230, 0.14), rgba(139, 92, 246, 0.1));
 
   --container: 1100px;
-  --radius: 18px;
-  --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --radius: 22px;
+  --shadow: 0 22px 44px rgba(15, 23, 42, 0.10);
+  --shadow-soft: 0 16px 30px rgba(91, 92, 230, 0.12);
 }
 
 * {
@@ -38,7 +43,9 @@ body {
     Arial,
     sans-serif;
 
-  background: var(--background);
+  background:
+    radial-gradient(circle at top left, rgba(91, 92, 230, 0.09), transparent 30%),
+    linear-gradient(180deg, #f8fbff 0%, var(--background) 100%);
   color: var(--text);
   line-height: 1.7;
 }
@@ -46,6 +53,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.25s ease;
 }
 
 img {
@@ -74,10 +82,11 @@ main {
   top: 0;
   z-index: 1000;
 
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(12px);
-
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03);
 }
 
 .navbar {
@@ -104,22 +113,37 @@ main {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1.4rem;
 }
 
 .nav-links a {
+  position: relative;
   color: #475569;
   font-size: 0.92rem;
-  font-weight: 600;
+  font-weight: 700;
+  padding: 0.35rem 0.15rem;
+}
 
-  transition:
-    color 0.25s ease,
-    transform 0.25s ease;
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
 }
 
 .nav-links a:hover {
   color: var(--primary);
-  transform: translateY(-1px);
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
 }
 
 
@@ -130,20 +154,36 @@ main {
 .hero {
   position: relative;
   overflow: hidden;
-
   background:
-    radial-gradient(
-      circle at 85% 20%,
-      rgba(99, 102, 241, 0.14),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 10% 80%,
-      rgba(139, 92, 246, 0.10),
-      transparent 30%
-    );
-
+    radial-gradient(circle at 85% 15%, rgba(99, 102, 241, 0.20), transparent 28%),
+    radial-gradient(circle at 10% 80%, rgba(139, 92, 246, 0.14), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(244, 247, 251, 0.95));
   padding: 7rem 0 6rem;
+}
+
+.hero::before,
+.hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(18px);
+  pointer-events: none;
+}
+
+.hero::before {
+  width: 320px;
+  height: 320px;
+  background: rgba(91, 92, 230, 0.10);
+  right: -80px;
+  top: 30px;
+}
+
+.hero::after {
+  width: 280px;
+  height: 280px;
+  background: rgba(236, 72, 153, 0.08);
+  left: -80px;
+  bottom: 30px;
 }
 
 .hero-content {
@@ -155,6 +195,8 @@ main {
   gap: 5rem;
 
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 
 .welcome,
@@ -212,40 +254,43 @@ main {
   align-items: center;
   justify-content: center;
 
-  padding: 0.85rem 1.5rem;
-  border-radius: 10px;
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
 
   font-weight: 700;
   font-size: 0.92rem;
+  border: 1px solid transparent;
 
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease,
-    background 0.25s ease;
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
 }
 
 .primary-btn {
   color: white;
   background: var(--gradient);
-
-  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 12px 24px rgba(91, 92, 230, 0.26);
 }
 
 .primary-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.35);
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 16px 28px rgba(91, 92, 230, 0.34);
 }
 
 .secondary-btn {
   color: var(--dark);
-  background: white;
-  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(148, 163, 184, 0.35);
 }
 
 .secondary-btn:hover {
   transform: translateY(-3px);
-  border-color: var(--primary);
+  border-color: rgba(91, 92, 230, 0.5);
   color: var(--primary);
+  box-shadow: var(--shadow-soft);
 }
 
 
@@ -358,9 +403,10 @@ main {
 .about-card {
   padding: 2rem;
 
-  background: var(--background);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.95));
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.03);
 
   transition:
     transform 0.3s ease,
@@ -419,15 +465,24 @@ main {
   display: flex;
   gap: 1.5rem;
 
-  background: white;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.03);
 
   padding: 2rem;
 
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--gradient);
 }
 
 .portfolio-card:hover {
@@ -518,8 +573,9 @@ main {
 
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.03);
 
-  background: var(--background);
+  background: linear-gradient(180deg, #ffffff, #f8fafc);
 }
 
 .timeline-number {
@@ -560,9 +616,10 @@ main {
 .skill-card {
   padding: 2rem;
 
-  background: white;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.03);
 
   transition:
     transform 0.3s ease,
@@ -902,4 +959,49 @@ main {
   .traineeship-card {
     padding: 1.3rem;
   }
+}
+.contact-form {
+  max-width: 650px;
+  margin: 40px auto 0;
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #6c63ff;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.contact-email {
+  margin-top: 25px;
+}
+
+.contact-email a {
+  color: #6c63ff;
+  text-decoration: none;
 }

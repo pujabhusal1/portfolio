@@ -6,7 +6,6 @@ title: Puja Bhusal | Portfolio
 <!-- Navigation -->
 <header class="site-header">
   <nav class="navbar">
-    <a href="{{ '/' | relative_url }}" class="logo">Puja<span>.</span></a>
 
     <div class="nav-links">
       <a href="#about">About</a>
@@ -31,16 +30,16 @@ title: Puja Bhusal | Portfolio
         Hi, I'm <span>Puja Bhusal</span>
       </h1>
 
-      <h2>BCA Graduate & Aspiring IT Professional</h2>
+      <h2>BCA Graduate & Aspiring IT student</h2>
 
       <p>
         I am from Nepal and have completed my Bachelor's degree in
         Computer Applications (BCA). I am currently learning Python
-        programming and continuously improving my technical skills.
+        programming and  continuously improving my technical skills.
       </p>
 
       <p>
-        I am interested in technology, UI/UX design, programming, and
+        I am interested in technology, Quality Assurance, programming, and
         continuous learning. My goal is to build a successful career
         in the IT field through practical experience and real-world projects.
       </p>
@@ -298,6 +297,7 @@ title: Puja Bhusal | Portfolio
 
 
 <!-- Contact Section -->
+<!-- Contact Section -->
 <section class="contact-section" id="contact">
   <div class="container">
 
@@ -311,9 +311,58 @@ title: Puja Bhusal | Portfolio
         opportunities in the IT field.
       </p>
 
-      <a href="mailto:your-email@example.com" class="btn primary-btn">
-        Email Me
-      </a>
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="contact-form"
+      >
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn primary-btn">
+          Send Message
+        </button>
+
+      </form>
+
+      <p class="contact-email">
+        Or email me directly:
+        <a href="mailto:pujabhusal1234@gmail.com">
+          pujabhusal1234@gmail.com
+        </a>
+      </p>
+
     </div>
 
   </div>
@@ -330,12 +379,12 @@ title: Puja Bhusal | Portfolio
       </a>
 
       <p>
-        BCA Graduate · Aspiring IT Professional
+        BCA Graduate
       </p>
     </div>
 
     <p class="copyright">
-      © {{ 'now' | date: "%Y" }} Puja Bhusal. All rights reserved.
+       {{ 'now' | date: "%Y" }} Puja Bhusal. All rights reserved.
     </p>
 
   </div>
