@@ -74,7 +74,6 @@ title: Puja Bhusal | Portfolio
 
     <div class="about-content">
       <div class="about-card">
-        <div class="icon">🎓</div>
         <h3>BCA Graduate</h3>
         <p>
           I have completed my Bachelor's degree in Computer Applications
@@ -384,7 +383,7 @@ a
     </div>
 
     <p class="copyright">
-       {{ 'now' | date: "%Y" }} Puja Bhusal. All rights reserved.
+       {{ 'now' | date: "%Y" }} Puja Bhusal.
     </p>
 
   </div>
